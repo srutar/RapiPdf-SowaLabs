@@ -3,13 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
     <title>Example RapiPdf Output with API Examples</title>
-    <script type="text/javascript" src="../rapipdf-min.js"></script>
+    <script type="text/javascript" src="../rapipdf-min.js?version=2"></script>
   </head>
   <body>
     <rapi-pdf
-        spec-url="../specs/openapi3_with_examples.json"
+        spec-url="../specs/bison.json"
         style = "font-size: 10px"
-        pdf-schema-style="table"
-        include-example="true" />
+        
+        pdf-schema-style="table" 
+        pdf-footer-text="Boerse Stuttgart Digital"
+        pdf-primary-color="#6432fa" 
+        pdf-alternate-color="darkred" 
+        />
   </body>
 </html>
